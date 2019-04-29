@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center mt-5">
+    <div class="col-4">
+     <div class="card">
+       <div class="card-body">
+         <div class="centro">
+           <h1>Registro de Usuario</h1>
+         </div>
+         <form>
+           <div class="form-group">
+             <input type="text" class="form-control" id="user" name="user" [(ngModel)]="userRegistro.usuario" placeholder="  Ingrese Usuario"> 
+           </div>
+           <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" [(ngModel)]="userRegistro.correo" placeholder="  Ingrese Email"> 
+           </div>
+           <div class="form-group">
+              <input type="text" class="form-control" id="password" name="password" [(ngModel)]="userRegistro.contrasena" placeholder="  Ingrese contrasena"> 
+           </div>
+           <button class="btn btn-primary btn-block" (click)="saveNewUser()">Registrar</button>
+         </form>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
